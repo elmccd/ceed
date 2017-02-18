@@ -1,9 +1,9 @@
 {
-  "name": "sid",
+  "name": "ceed",
   "version": "1.0.0",
   "description": "CI/CD in js helpers",
   "license": "MIT",
-  "repository": "elmccd/sid",
+  "repository": "elmccd/ceed",
   "author": {
     "name": "Maciej Dudzinski",
     "email": "elmccd@gmail.com",
@@ -18,9 +18,6 @@
   "files": [
     "index.js"
   ],
-  "xo": {
-    "process-exit": false
-  },
   "keywords": [
     "cicd",
     "build",
