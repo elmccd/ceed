@@ -1,6 +1,6 @@
 {
   "name": "sid",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "CI/CD in js helpers",
   "license": "MIT",
   "repository": "elmccd/sid",
@@ -22,7 +22,12 @@
     "process-exit": false
   },
   "keywords": [
-    "cicd", "build", "script", "async", "bamboo", "exec"
+    "cicd",
+    "build",
+    "script",
+    "async",
+    "bamboo",
+    "exec"
   ],
   "dependencies": {},
   "devDependencies": {
