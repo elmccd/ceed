@@ -1,6 +1,6 @@
 {
   "name": "ceed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CI/CD in js helpers",
   "license": "MIT",
   "repository": "elmccd/ceed",
