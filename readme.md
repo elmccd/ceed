@@ -1,6 +1,6 @@
 # ceed [![Build Status](https://travis-ci.org/elmccd/ceed.svg?branch=master)](https://travis-ci.org/elmccd/ceed)
 
-> Set of JS async utils making build pipelines in JS easier
+> Set of JS async utils making building pipelines in JS easier
 
 Library is taking advantage of ES2017 `async/await` functionality to
 allow creating more readable scripts performing command operations.
@@ -27,7 +27,7 @@ const {
     run,
     commit,
     maybe
-  } = require('sid');
+  } = require('ceed');
 
 (async function () {
     await commit('mkdir -p build', {}, {verbose: true});
