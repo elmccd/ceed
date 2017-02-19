@@ -5,6 +5,30 @@
 Library is taking advantage of ES2017 `async/await` functionality to
 allow creating more readable scripts performing command operations.
 
+## In short
+
+```js
+const maybe = require('ceed').maybe;
+
+const ls = await maybe('ls build')
+
+console.log(pwd);
+/*
+{
+  "code": 0,
+  "error": null,
+  "failed": false,
+  "succeed": true,
+  "output": "another.c\nfile.txt\n",
+  "value": "another.c\nfile.txt",
+  "values": [
+    "another.c",
+    "file.txt"
+  ],
+  "stderr": ""
+} */
+```
+
 ## Install
 
 ```
@@ -66,6 +90,11 @@ way of handling errors.
 See [node.js child_process.exec options](https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback)
 for all `execOptions`
 
+Example:
+```js
+await maybe('ls', {cwd: 'build'})
+```
+
 **ceedOptions**:
 - `verbose: boolean` - output result of every command. Default `false`.
 
@@ -98,7 +127,7 @@ resolved successfully. You can get script exit code and status checking
 	failed: boolean, //is .code different than 0
 	succeed: boolean, //oposite of failed
 	output: string, //value of stdout
-	value: string, //trimmed .output
+	value: string, //trimmed .output, useuful for single value outputs
 	values: Array<string>, //trimmed .output splitted by lines
 	stderr: string // value of stderr
 }
