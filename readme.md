@@ -12,7 +12,7 @@ const maybe = require('ceed').maybe;
 
 const ls = await maybe('ls build')
 
-console.log(pwd);
+console.log(ls);
 /*
 {
   "code": 0,
